@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Infohub - Github Users Info</title>
+        <link rel="stylesheet" href="index-style.css">
+        <link rel="shortcut icon" href="Imgs/hub.png">
+    </head>
+
+
+    <body>
+
+        <header>
+            <h1>Infohub</h1>
+        </header>
+
+        <main>
+            <p>In this website you can access information about any Github's User. 
+                Just write the user's current account name in the field bellow and we will
+                bring the data associated to his/her account.
+            </p>
+
+            <input id="inputUserName" type="text" placeholder="User">
+            <input id="submitRequest" type="submit">
+
+            <section id="userDisplay">
+
+            </section>
+        </main>
+
+        <footer>
+
+            <p>Copyright</p>
+
+        </footer>
+        
+    </body>
+    <script src="srcs/Models/User.js"></script>
+    <script src="srcs/View/UserView.js"></script>
+    <script src="srcs/Controller/UserController.js"></script>
+    <script src="srcs/Models/Repos.js"></script>
+    <script src="srcs/View/ReposView.js"></script>
+    <script src="srcs/Controller/ReposController.js"></script>
+    <script src="index.js"></script>
+</html>
