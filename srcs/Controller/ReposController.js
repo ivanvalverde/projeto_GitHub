@@ -9,13 +9,13 @@ class ReposController {
         reqRepos.open("GET",url);
 
         reqRepos.addEventListener("load", ()=> {
-            let userDisplay = document.querySelector("#userDisplay");
+            let reposDisplay = document.querySelector("#repositoriesDisplay");
             let reqArrObj = JSON.parse(reqRepos.responseText);
 
             for(let i=0; i < reqArrObj.length; i++){
                 let reposApi = new Repos(reqArrObj[i].name, reqArrObj[i].html_url);
                 console.log(reposApi);
-                userDisplay.innerHTML += ReposView.displayRepos(reposApi.getRepos());
+                reposDisplay.innerHTML += ReposView.displayRepos(reposApi.getRepos());
             }
         })
 

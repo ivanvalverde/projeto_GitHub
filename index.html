@@ -5,33 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Infohub - Github Users Info</title>
         <link rel="stylesheet" href="index-style.css">
+        <link rel="stylesheet" href="reset.css">
         <link rel="shortcut icon" href="Imgs/hub.png">
     </head>
 
 
-    <body>
+    <body id="body">
 
         <header>
-            <h1>Infohub</h1>
+            <h1 id="titlePage">Infohub</h1>
         </header>
 
-        <main>
-            <p>In this website you can access information about any Github's User. 
+        <main id="main">
+            <p id="siteObjective">In this website you can access information about any Github's User. 
                 Just write the user's current account name in the field bellow and we will
                 bring the data associated to his/her account.
             </p>
 
             <input id="inputUserName" type="text" placeholder="User">
-            <input id="submitRequest" type="submit">
+            <input id="submitRequest" type="submit" value="Submit">
 
             <section id="userDisplay">
 
             </section>
+            
+            <div id="repositoriesDisplay">
+
+            </div>
+
         </main>
 
-        <footer>
+        <footer id="footer">
 
-            <p>Copyright</p>
+            <p id="coyright">© 2020 Infohub by Ivan Valverde | This website is copyright free</p>
 
         </footer>
         

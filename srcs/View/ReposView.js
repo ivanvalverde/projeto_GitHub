@@ -5,9 +5,9 @@ class ReposView {
     }
 
     static displayRepos(repos) {
-        return `<div>
-                        <a href="${repos.url}"><img src="Imgs/repositories.png" style="width: 10%; height:10%;"></a>
-                        <p><strong>Repository Name:</strong> ${repos.name}</p>      
+        return `<div id="reposBrought">
+                        <a href="${repos.url}"><img src="Imgs/repositories.png" id="reposImg"></a>
+                        <p id="reposName"><strong id="strong">Repository Name:<br><br></strong> ${repos.name}</p>      
                 </div>`
     }
 }

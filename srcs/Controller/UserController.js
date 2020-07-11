@@ -14,7 +14,7 @@ class UserController {
 
             let userApi = new User(reqObj.login, reqObj.name, reqObj.avatar_url, reqObj.bio, reqObj.followers, reqObj.following);
 
-            userDisplay.innerHTML += UserView.displayUser(userApi.getUser());
+            userDisplay.innerHTML = UserView.displayUser(userApi.getUser());
         })
 
         reqUser.send();
