@@ -69,8 +69,8 @@ Project that pulls information about any GitHub user and also brings their repos
 
 The project consists of main files and their components that are divided into folders, which are: **Imgs**, **srcs** and **css**.
 
-- *** index.html *** - It is the main page where all operations are performed;
-- *** index.js *** - It is the script that associates the user's search event with the button, it is an auxiliary script.
+- ***index.html*** - It is the main page where all operations are performed;
+- ***index.js*** - It is the script that associates the user's search event with the button, it is an auxiliary script.
 
 ### Imgs
 
