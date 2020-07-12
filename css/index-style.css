@@ -1,0 +1,230 @@
+#body{
+    text-align: center;
+    background: url('../Imgs/background.png');
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#titlePage{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bold;
+}
+
+#submitRequest{
+    margin-left: 1%;
+}
+
+.errorMessage{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    visibility: hidden;
+}
+
+.errorMsgVisible{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    visibility: visible;
+    color: red;
+    font-weight: bold;
+}
+
+#siteObjective{
+    margin-right:15%;
+    margin-left:15%;
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+#repositoriesDisplay{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main{
+    margin-bottom: 5%;
+}
+
+#footer{
+
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    padding-bottom: 1%;
+    padding-top:1%;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#strong{
+
+    font-weight: bold;
+}
+
+#userAvatar{
+
+    height: 20%;
+    width: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: solid 2px black;
+}
+
+#userBrought{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    text-align: left;
+    margin-top:5%;
+    margin-bottom:5%;
+    background-color: rgb(255, 255, 255);
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    font-size: 25px;
+}
+
+#userInfo{
+    line-height: 2;
+}
+
+.followingFollowers{
+    text-decoration: none;
+    color: black;
+}
+
+
+.followingFollowers:hover{
+    color: #c6a25d;
+    text-decoration: none;
+}
+
+#bio{
+    max-width: 60ch;
+}
+
+#reposBrought{
+    width:33%;
+    text-align:center;
+    margin-top: 2%;
+    margin-bottom:2%;
+    padding-bottom:10px;
+}
+
+#hoverImg{
+    text-decoration: none;
+}
+
+.Imghover{
+    display: none;
+}
+
+#hoverImg:hover img:first-child{
+    display: none;
+}
+
+#hoverImg:hover img:last-child{
+    display: inline-block;
+    width: 30%;
+    height:60%;
+}
+
+#reposImg{
+    width: 30%;
+    height:60%;
+}
+
+#reposName{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.creator{
+    text-decoration: none;
+    color: white;
+}
+
+.creator:hover{
+    color: #c6a25d;
+}
+
+
+
+
+
+@media (max-width: 700px){
+
+    #userBrought{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        text-align: center;
+        margin-top:5%;
+        margin-bottom:5%;
+        background-color: rgb(255, 255, 255);
+        border-top: solid 2px black;
+        border-bottom: solid 2px black;
+        font-size: 25px;
+    }
+
+    #repositoriesDisplay{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #inputUserName{
+        margin-top: 3%;
+    }
+
+    .errorMsgVisible{
+        margin-top: 4%;
+        margin-bottom: 1%;
+        visibility: visible;
+        color: red;
+        font-weight: bold;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: justify;
+    }
+
+    #userAvatar{
+
+        height: 50%;
+        width: 50%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        border: solid 2px black;
+    }
+
+    #reposBrought{
+        width:100%;
+        text-align:center;
+        margin-top: 3%;
+        margin-bottom:3%;
+        padding-bottom:10px;
+    }
+
+    #copyright{
+        text-align: center;
+        margin-left:5%;
+        margin-right:5%;
+    }
+
+    #bio{
+        text-align: justify;
+        max-width: 60ch;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
